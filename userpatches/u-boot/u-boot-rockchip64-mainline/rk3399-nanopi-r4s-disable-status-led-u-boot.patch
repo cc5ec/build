@@ -1,0 +1,13 @@
+diff --git a/arch/arm/dts/rk3399-nanopi4.dtsi b/arch/arm/dts/rk3399-nanopi4.dtsi
+index c88018a0..58f393b1 100644
+--- a/arch/arm/dts/rk3399-nanopi4.dtsi
++++ b/arch/arm/dts/rk3399-nanopi4.dtsi
+@@ -122,7 +122,7 @@
+ 		status {
+ 			gpios = <&gpio0 RK_PB5 GPIO_ACTIVE_HIGH>;
+ 			label = "status_led";
+-			linux,default-trigger = "heartbeat";
++			default-state = "off";
+ 		};
+ 	};
+ 

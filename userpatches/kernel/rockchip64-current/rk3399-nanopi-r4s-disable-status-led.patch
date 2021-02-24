@@ -1,0 +1,13 @@
+diff --git a/arch/arm64/boot/dts/rockchip/rk3399-nanopi4.dtsi b/arch/arm64/boot/dts/rockchip/rk3399-nanopi4.dtsi
+index 76a8b40a9..b201cac49 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3399-nanopi4.dtsi
++++ b/arch/arm64/boot/dts/rockchip/rk3399-nanopi4.dtsi
+@@ -122,7 +122,7 @@ leds: gpio-leds {
+ 		status_led: led-0 {
+ 			gpios = <&gpio0 RK_PB5 GPIO_ACTIVE_HIGH>;
+ 			label = "status_led";
+-			linux,default-trigger = "heartbeat";
++			default-state = "off";
+ 		};
+ 	};
+ 
